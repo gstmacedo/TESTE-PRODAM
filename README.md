@@ -103,16 +103,16 @@ Insere um novo filme.
 
 | código | descrição | 
 |--------|-----------|
-|201|Categoria criada com sucesso
+|201|Filme criado com sucesso
 |400|Erro de validação - verifique o corpo da requisição
 
 ---
 
-### Apagar Categoria
+### Apagar Filme
 
-`DELETE` /categoria/{id}
+`DELETE` /filme/{id}
 
-Apaga os dados da categoria com o `id` informado.
+Apaga os dados do filme com o `id` informado.
 
 
 
@@ -120,27 +120,29 @@ Apaga os dados da categoria com o `id` informado.
 
 | código | descrição | 
 |--------|-----------|
-|204|Categoria apagada com sucesso
+|204|Filme apagado com sucesso
 |404| Id da categoria não encontrado
 
 ---
 ### Editar Categoria
 
-`PUT` /categoria/{id}
+`PUT` /filme/{id}
 
-Atualiza os dados da categoria com o `id` informado.
+Atualiza os dados do filme com o `id` informado.
 
 |campo|tipo|obrigatório|descrição 
 |-----|----|:-----------:|-----------|
-|nome|string| ✅ |Um nome curto para a categoria
-|icone|string|✅|O nome do ícone conforme Material Icons
+|nome|string| ✅ |Um nome para a Filme
+|nome|float| ✅ |UM valor para o Filme
+|descricao|string|✅|Descrição para o filme
 
 **Corpo da Requisição:**
 ```js
 
 {
-    "nome": "Alimentação",
-    "icone": "fast-food"
+        "nome": "Vingadores",
+        "valor": 100,
+        "descricao": "Romance"
 }
 
 ```
@@ -150,10 +152,10 @@ Atualiza os dados da categoria com o `id` informado.
 ```js
 
 {
-    "id": 1,
-    "nome": "Alimentação",
-    "valor": 50
-    "icone": ""
+        "id": 1,
+        "nome": "Vingadores",
+        "valor": 100,
+        "descricao": "Romance"
 }
 
 ```
@@ -162,6 +164,6 @@ Atualiza os dados da categoria com o `id` informado.
 
 | código | descrição | 
 |--------|-----------|
-|200|Categoria atualizada com sucesso
+|200|Filme atualizado com sucesso
 |400| A validação falhou - verifiue o corpo da requisição
-|404| Id da categoria não encontrado
+|404| Id do filme não encontrado
