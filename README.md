@@ -74,7 +74,7 @@ Insere um novo filme.
 |-----|----|:-----------:|-----------|
 |nome|string| ✅ |Um nome para a Filme
 |nome|float| ✅ |UM valor para o Filme
-|descricao|string|❌|Descrição obrigatória
+|descricao|string|✅|Descrição obrigatória
 
 ```js
 
