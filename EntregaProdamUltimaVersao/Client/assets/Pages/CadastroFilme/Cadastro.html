@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>Filme - cadastro</title>
+</head>
+<body>
+    <header class="container__header">
+        <a href="../../../index.html" class="link__header"><img src="../../Imagens/Logo.png" alt="Logo do site chamado Estoque locadoura" class="logo__header"></a>
+    </header>
+    <main class="body__main">
+        <section class="container__main">
+            <form action="#" class="content__main" id="meuFormulario">
+                <h1>Filme</h1>
+                <div>
+                    <label for="nome_filme">Nome do filme:</label>
+                    <input type="text" name="nome_filme"  minlength="1" maxlength="255" placeholder="Exemplo: Dracula" >
+
+                    <label for="valor_filme">Valor do filme:</label>
+                    <input type="number" name="valor_filme"  minlength="1" maxlength="11" placeholder="exemplo: 50">
+
+                    <label for="descricao_filme">Descrição do filme:</label>
+                    <input type="text" name="descricao_filme"  minlength="1" maxlength="255" placeholder="exemplo: Filme de vampiro">
+
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                </div>       
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer especial">
+        <h1>Autor: Gustavo Macedo da Silva</h1>
+    </footer>
+    <script src="./cadastro.js" defer></script>
+</body>
+</html>
