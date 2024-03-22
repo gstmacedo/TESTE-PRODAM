@@ -2,4 +2,4 @@
 
 Requisitos do Ambiente
 
-Certifique-se de que o ambiente está configurado corretamente antes de iniciar o aplicativo. O cliente deve estar configurado para rodar na porta 5500, enquanto o servidor deve ser execu
+Certifique-se de que o ambiente está configurado corretamente antes de iniciar o aplicativo. O cliente deve estar configurado para rodar na porta 5500, enquanto o servidor deve ser excutado na porta 8080,com a ultima versão do Spring Boot baixada.
